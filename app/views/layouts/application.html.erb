@@ -44,14 +44,12 @@
     <%= stylesheet_link_tag 'application', media: 'all' %>
   </head>
   <body>
-
-    <% if request.original_url != root_url %>
+    <div class="mobile-container">
       <%= render 'shared/bh-nav-header' %>
-    <% end %>
-    <%= yield %>
-    <%= render 'shared/bh-nav-footer' %>
-    <%= javascript_include_tag 'application' %>
-    <%= javascript_pack_tag 'application' %>
-
+      <%= yield %>
+      <%= render 'shared/bh-nav-footer' %>
+      <%= javascript_include_tag 'application' %>
+      <%= javascript_pack_tag 'application' %>
+    </div>
   </body>
 </html>
