@@ -1,9 +1,5 @@
-// $color: #F49342;
- $color: #F49342;
-
-
 .bh-btn-solid-lg{
-  background-color: darken($color, 10%);
+  background-color: $bh-orange;
   width: 100%;
   height: 57px;
   border: none;
@@ -21,7 +17,7 @@
    }
 }
 .bh-btn-solid-variable-slim{
-  background-color: darken($color, 10%);
+  background-color: $bh-orange;
   height: 35px;
   border: none;
   color: white;
@@ -36,7 +32,7 @@
 }
 
 .bh-btn-solid-sm{
-  background-color: darken($color, 10%);
+  background-color: $bh-orange;
   width: 45%;
   height: 57px;
   border: none;
@@ -54,8 +50,8 @@
   background-color: white;
   width: 100%;
   height: 57px;
-  border: 1px solid $color;
-  color: $color;
+  border: 1px solid $bh-orange;
+  color: $bh-orange;
   padding: 15px 50px;
   text-align: center;
   text-decoration: none;
@@ -69,8 +65,8 @@
   background-color: white;
   width: 45%;
   height: 57px;
-  border: 1px solid $color;
-  color: $color;
+  border: 1px solid $bh-orange;
+  color: $bh-orange;
   padding: 15px 50px;
   text-align: center;
   text-decoration: none;
@@ -81,7 +77,7 @@
 }
 
 .bh-btn-solid-lg-home {
-  background-color: #F49342;
+  background-color: $bh-orange;
   width: 100%;
   height: 57px;
   border: none;
@@ -96,7 +92,7 @@
 }
 
 .bh-btn-solid-lg-show {
-  background-color: darken($color, 10%);
+  background-color: $bh-orange;
   width: 100%;
   height: 57px;
   border: none;
@@ -115,7 +111,7 @@
 }
 
 .bh-btn-solid-lg-sticky{
-  background-color: darken($color, 10%);
+  background-color: $bh-orange;
   width: 83%;
   height: 57px;
   border: none;
