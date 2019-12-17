@@ -12,6 +12,9 @@
 @import "components/index";
 @import "pages/index";
 
+// body{
+//   background-color: black;
+// }
 
 h1{
   font-size: 34px;
@@ -37,25 +40,24 @@ ul {
   list-style-type: none;
 }
 
-a:hover {
-  text-decoration: none;
-  color: $bh-dark;
+a {
+  // color: white !important;
 }
 
-a:active {
-  text-decoration: none;
-  color: $bh-dark;
+.container {
+  height: 100vh;
 }
 
 .mobile-container {
   width: 100vw;
   height: 100vh;
   margin: 0 auto;
+  background-color: white;
 }
 
 @media(min-width: 769px) {
   .mobile-container {
     width: 375px;
-    height: 667px;
+    height: 100%;
   }
 }
