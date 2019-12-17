@@ -11,9 +11,9 @@ $color: #393E46;
   padding-top: 7px;
 }
 
-.bh-user-index-avatar {
-  margin-left: -3px;
-}
+// .bh-user-index-avatar {
+//   margin-left: -3px;
+// }
 
 .bh-card-user-index-info {
   display:flex;
@@ -25,38 +25,26 @@ $color: #393E46;
   }
 }
 
-.bh-card-user-index-languages {
-  display: flex;
-  flex-direction: column;
- p {
-    margin-bottom: 0px;
-  }
-}
+// .language{
+//   padding-left: 10px;
+//   padding-right: 10px;
+// }
 
 
-.language-part {
+// .language-sharing {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-around;
+// }
 
-}
-
-.language{
-  padding-left: 10px;
-  padding-right: 10px;
-
-}
-.language-sharing {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.bh-card-user-index-sharing {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  p {
-    color: $color;
-  }
-}
+// .bh-card-user-index-sharing {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: baseline;
+//   p {
+//     color: $color;
+//   }
+// }
 
 .lang-pro {
   color: $color;
