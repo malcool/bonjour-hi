@@ -65,7 +65,7 @@
   </div>
   
   <% if @user != current_user %>
-  <div class="bh-button-sticky-bottom">
+  <div class="bh-button-bgfade">
     <%= link_to "Request a Meetup", new_user_meetup_path(@user), class: "bh-btn-solid-lg-sticky" %>
   </div>
 <% else %>

@@ -1,3 +1,31 @@
+// Main Sticky Button & Opaque Gradient background
+
+.bh-btn-solid-lg-sticky{
+  background-color: $bh-orange;
+  width: 100%;
+  height: 57px;
+  border: none;
+  color: white;
+  padding: 15px 50px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 15px auto;
+  border-radius: 8px;
+}
+
+.bh-button-bgfade {
+  display: flex;
+  width: 100%;
+  height: 95px;
+  bottom: 49px;
+  margin: 0;
+  position: sticky;
+  background-image: linear-gradient(to bottom, transparent, white);
+}
+
+// Slim Buttons
+
 .bh-btn-solid-variable-slim{
   background-color: $bh-orange;
   height: 35px;
@@ -24,29 +52,3 @@
   margin-bottom: 10px;
   border-radius: 8px;
 }
-
-.bh-btn-solid-lg-sticky{
-  background-color: $bh-orange;
-  width: 100%;
-  height: 57px;
-  border: none;
-  color: white;
-  padding: 15px 50px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  margin: 15px auto;
-  border-radius: 8px;
-}
-
-// Sticky Button
-.bh-button-sticky-bottom {
-  display: flex;
-  width: 100%;
-  height: 95px;
-  bottom: 49px;
-  margin: 0;
-  position: sticky;
-  background-image: linear-gradient(to bottom, transparent, white);
-}
-
