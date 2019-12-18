@@ -1,5 +1,4 @@
 <div class="container">
-
   <div class="bh-flex-container">
     <div class="bh-flex-element">
       <img class="bh-avatar-lg" src="<%= @user.photo %>">
@@ -9,9 +8,7 @@
       <p class="mt-n1">Past Meetups: <%= @user.num_of_past_meetups %></p>
     </div>
   </div>
-
   <div class="bh-flex-container">
-
     <div class="bh-flex-element">
       <h3><b>Sharing</b></h3>
       <% @user.user_languages.filter(&:sharing).each do |user_language| %>
@@ -22,7 +19,7 @@
           <div class="d-flex align-items-center justify-content-flex-left">
             <div style="background-color: #DDDDDD; width: 50px; height: 13px;">
               <div
-                style ="width: <%= user_language.level %>; background-color: #80BD9E; height: 13px;">
+                style ="width: <%= user_language.level %>; background-color: #76e0aa; height: 13px;">
               </div>
             </div>
           </div>
@@ -32,7 +29,6 @@
         </div>
       <% end %>
     </div>
-
     <div class="bh-flex-element">
       <h3><b>Practicing</b></h3>
       <% @user.user_languages.filter(&:seeking).each do |user_language| %>
@@ -43,7 +39,7 @@
           <div class="d-flex align-items-center justify-content-flex-left">
             <div style="background-color: #DDDDDD; width: 50px; height: 13px;">
               <div
-                style ="width: <%= user_language.level %>; background-color: #F49342; height: 13px;">
+                style ="width: <%= user_language.level %>; background-color: #ff8e27; height: 13px;">
               </div>
             </div>
           </div>
@@ -53,16 +49,11 @@
         </div>
       <% end %>
     </div>
-
   </div>
-
   <div class="bh-text-body">
     <h3><b>Bio</b></h3>
     <p><%= @user.bio %></p>
   </div>
-
-
-
   <div class="bh-text-body">
     <h3><b>Reviews</b></h3>
     <% @user.user_reviews.each do |r|%>

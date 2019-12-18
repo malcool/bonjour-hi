@@ -1,64 +1,14 @@
-.bh-btn-solid-lg{
-  background-color: $bh-orange;
-  width: 100%;
-  height: 57px;
-  border: none;
-  color: white;
-  padding: 15px 50px;
-  text-align: center;
-  text-decoration: none;
-  // display: inline-block;
-  font-size: 16px;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  border-radius: 8px;
-   a {
-    color: white;
-   }
-}
 .bh-btn-solid-variable-slim{
   background-color: $bh-orange;
   height: 35px;
-  border: none;
   color: white;
   padding: 4px 12px;
   text-align: center;
   text-decoration: none;
-  // display: inline-block;
   font-size: 16px;
   margin-bottom: 10px;
   border-radius: 8px;
   outline: none;
-}
-
-.bh-btn-solid-sm{
-  background-color: $bh-orange;
-  width: 45%;
-  height: 57px;
-  border: none;
-  color: white;
-  padding: 15px 50px;
-  text-align: center;
-  text-decoration: none;
-  // display: inline-block;
-  font-size: 16px;
-  margin-bottom: 10px;
-  border-radius: 8px;
-}
-
-.bh-btn-outline-lg{
-  background-color: white;
-  width: 100%;
-  height: 57px;
-  border: 1px solid $bh-orange;
-  color: $bh-orange;
-  padding: 15px 50px;
-  text-align: center;
-  text-decoration: none;
-  // display: inline-block;
-  font-size: 16px;
-  margin-bottom: 10px;
-  border-radius: 8px;
 }
 
 .bh-btn-outline-sm{
@@ -70,11 +20,25 @@
   padding: 15px 50px;
   text-align: center;
   text-decoration: none;
-  // display: inline-block;
   font-size: 16px;
   margin-bottom: 10px;
   border-radius: 8px;
 }
+
+// .bh-btn-solid-sm{
+//   background-color: $bh-orange;
+//   width: 45%;
+//   height: 57px;
+//   border: none;
+//   color: white;
+//   padding: 15px 50px;
+//   text-align: center;
+//   text-decoration: none;
+//   font-size: 16px;
+//   margin-bottom: 10px;
+//   border-radius: 8px;
+// }
+
 
 .bh-btn-solid-lg-home {
   background-color: $bh-orange;
@@ -100,14 +64,10 @@
   padding: 15px 50px;
   text-align: center;
   text-decoration: none;
-  // display: inline-block;
   font-size: 16px;
   margin: 15px auto;
   margin-bottom: 10px;
   border-radius: 8px;
-   a {
-    color: white;
-   }
 }
 
 .bh-btn-solid-lg-sticky{
@@ -122,9 +82,9 @@
   font-size: 16px;
   margin: 15px auto;
   border-radius: 8px;
-   a {
-    color: white;
-   }
+   // a {
+   //  color: white;
+   // }
 }
 
 // Sticky Button
@@ -135,6 +95,6 @@
   height: 95px;
   bottom: 49px;
   margin: 0;
-  background-image: linear-gradient(to bottom, transparent, #f4f4f4);
+  background-image: linear-gradient(to bottom, transparent, white);
 }
 

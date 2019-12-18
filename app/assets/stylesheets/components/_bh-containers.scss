@@ -1,4 +1,21 @@
-// Flex LG
+.container {
+  height: 100vh;
+}
+
+.mobile-container {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: white;
+}
+
+@media(min-width: 769px) {
+  .mobile-container {
+    width: 375px;
+    height: 100%;
+  }
+}
+
 .bh-flex-container {
   display: flex;
   width: 100%;
@@ -21,4 +38,3 @@
   margin: 8px;
   padding: 8px;
 }
-
