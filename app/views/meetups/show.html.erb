@@ -32,15 +32,9 @@
     </p>
   </div>
 
-<!-- End of container -->
-</div>
-
 <div class="mt-n2" >
 <%= image_tag "cafe.png", style:"width:100%" %>
 </div>
-
-<!-- Start of new container -->
-<div class="container">
 
   <div class="bh-text-body mt-3">
     <h3><b>Greeting message</b></h3>
@@ -48,37 +42,8 @@
     <div class="d-flex justify-content-end mt-n1"><%= link_to "Open Chat >>", user_chats_path(current_user, other_user: @meetup.opposite_user(current_user)), method: :post %></div>
   </div>
 
-<div class="container">
-    <% if @meetup.confirmed && !@meetup.meetup_occurred? %>
-      <%= link_to "" do %>
-        <button type="button" class="bh-btn-solid-lg-show">
-          Reschedule / Cancel
-        </button>
-      <% end %>
-    <% elsif !@meetup.confirmed && @meetup.sender == current_user %>
-      <%= link_to "" do %>
-        <button type="button" class="bh-btn-solid-lg-show">
-          Reschedule / Cancel
-        </button>
-      <% end %>
-    <% elsif @meetup.confirmed && @meetup.meetup_occurred? %>
-      <%= link_to "" do %>
-        <button type="button" class="bh-btn-solid-lg-show">
-          Leave a review
-        </button>
-      <% end %>
-    <% else %>
-      <%= link_to meetup_path(@meetup), method: :patch, remote: true do %>
-        <button id="confirmed-button" type="button" class="bh-btn-solid-lg-show" data-toggle="modal" data-target="#exampleModal">
-          Confirm meetup
-        </button>
-      <% end %>
-      <%= link_to "", remote: true do %>
-        <button id="cancel-button" type="button" class="bh-btn-solid-lg-show d-none">
-          Reschedule / Cancel
-        </button>
-      <% end %>
-    <% end %>
-  </div>
-  <br>
+<div class="bh-button-bgfade">
+  <div class="bh-btn-solid-lg-sticky">Done</div>
+</div>
+
 </div>

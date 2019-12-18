@@ -1,9 +1,7 @@
-// $color: #F49342;
- $color: #F49342;
+// Main Sticky Button & Opaque Gradient background
 
-
-.bh-btn-solid-lg{
-  background-color: darken($color, 10%);
+.bh-btn-solid-lg-sticky{
+  background-color: $bh-orange;
   width: 100%;
   height: 57px;
   border: none;
@@ -11,134 +9,46 @@
   padding: 15px 50px;
   text-align: center;
   text-decoration: none;
-  // display: inline-block;
   font-size: 16px;
-  margin-top: 5px;
-  margin-bottom: 10px;
+  margin: 15px auto;
   border-radius: 8px;
-   a {
-    color: white;
-   }
 }
+
+.bh-button-bgfade {
+  display: flex;
+  width: 100%;
+  height: 95px;
+  bottom: 49px;
+  margin: 0;
+  position: sticky;
+  background-image: linear-gradient(to bottom, transparent, white);
+}
+
+// Slim Buttons
+
 .bh-btn-solid-variable-slim{
-  background-color: darken($color, 10%);
+  background-color: $bh-orange;
   height: 35px;
-  border: none;
   color: white;
   padding: 4px 12px;
   text-align: center;
   text-decoration: none;
-  // display: inline-block;
   font-size: 16px;
   margin-bottom: 10px;
   border-radius: 8px;
   outline: none;
 }
 
-.bh-btn-solid-sm{
-  background-color: darken($color, 10%);
-  width: 45%;
-  height: 57px;
-  border: none;
-  color: white;
-  padding: 15px 50px;
-  text-align: center;
-  text-decoration: none;
-  // display: inline-block;
-  font-size: 16px;
-  margin-bottom: 10px;
-  border-radius: 8px;
-}
-
-.bh-btn-outline-lg{
-  background-color: white;
-  width: 100%;
-  height: 57px;
-  border: 1px solid $color;
-  color: $color;
-  padding: 15px 50px;
-  text-align: center;
-  text-decoration: none;
-  // display: inline-block;
-  font-size: 16px;
-  margin-bottom: 10px;
-  border-radius: 8px;
-}
-
 .bh-btn-outline-sm{
   background-color: white;
   width: 45%;
   height: 57px;
-  border: 1px solid $color;
-  color: $color;
+  border: 1px solid $bh-orange;
+  color: $bh-orange;
   padding: 15px 50px;
   text-align: center;
   text-decoration: none;
-  // display: inline-block;
   font-size: 16px;
   margin-bottom: 10px;
   border-radius: 8px;
 }
-
-.bh-btn-solid-lg-home {
-  background-color: #F49342;
-  width: 100%;
-  height: 57px;
-  border: none;
-  color: white;
-  padding: 15px 50px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  border-radius: 8px;
-}
-
-.bh-btn-solid-lg-show {
-  background-color: darken($color, 10%);
-  width: 100%;
-  height: 57px;
-  border: none;
-  color: white;
-  padding: 15px 50px;
-  text-align: center;
-  text-decoration: none;
-  // display: inline-block;
-  font-size: 16px;
-  margin: 15px auto;
-  margin-bottom: 10px;
-  border-radius: 8px;
-   a {
-    color: white;
-   }
-}
-
-.bh-btn-solid-lg-sticky{
-  background-color: darken($color, 10%);
-  width: 83%;
-  height: 57px;
-  border: none;
-  color: white;
-  padding: 15px 50px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  margin: 15px auto;
-  border-radius: 8px;
-   a {
-    color: white;
-   }
-}
-
-// Sticky Button
-.bh-button-sticky-bottom {
-  display: flex;
-  position: fixed;
-  width: 100%;
-  height: 95px;
-  bottom: 49px;
-  margin: 0;
-  background-image: linear-gradient(to bottom, transparent, #f4f4f4);
-}
-
