@@ -1,4 +1,5 @@
 <div class="container">
+  
   <div class="bh-flex-container"> 
     <div class="bh-flex-element">  
       <img class="bh-avatar-lg" src="<%= @user.photo %>">
@@ -8,7 +9,8 @@
       <p class="mt-n1">Past Meetups: <%= @user.num_of_past_meetups %></p>
     </div>
   </div>
-  <div class="bh-flex-container">     
+  
+  <div class="bh-flex-container">
     <div class="bh-flex-element">  
       <h3><b>Sharing</b></h3> 
       <% @user.user_languages.filter(&:sharing).each do |user_language| %> 
@@ -31,7 +33,8 @@
       <%= link_to new_user_language_path(ul_type: 'sharing') do %>
         <i class="fas fa-plus-circle"></i>
       <% end %>   
-    </div>    
+    </div>
+    
     <div class="bh-flex-element">  
       <h3><b>Practicing</b></h3> 
       <% @user.user_languages.filter(&:seeking).each do |user_language| %> 
@@ -56,15 +59,14 @@
       <% end %>   
     </div>   
   </div> 
+  
   <div class="bh-text-body">
     <h3><b>Bio</b></h3>
     <p><%= @user.bio %></p>
   </div>
-</div>
-
-<div class="bh-button-sticky-bottom">
+  
+  <div class="bh-button-sticky-bottom">
   <%= link_to "Edit Your profile", edit_user_path(@user), class: "bh-btn-solid-lg-sticky" %>
+  </div>
+  
 </div>
-
-
-
